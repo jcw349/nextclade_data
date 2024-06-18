@@ -3,7 +3,7 @@
 ## Authors
 | Key                    | Value                                                                                                                                  |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------|
-| authors                | [Jade Wang (NYC DOHMH)], [Byeong Jeong (NJ DOH)], [Luc Gagne (MA DPH)], [Matthew Doucette (MA DPH)], [Sean SierraPatev (RI DOH)]       |
+| authors                | [Jade Wang (NYC DOHMH)](jwang7@health.nyc.gov), [Byeong Jeong (NJ DOH)](), [Luc Gagne (MA DPH)](), [Matthew Doucette (MA DPH)](), [Sean SierraPatev (RI DOH)]()       |
 | data source            | US Public Health Laboratories, WNV4k Project, NCBI Genbank                                                                             |
 | nextclade dataset path | community/staph-b/wnv/lineages-all                                                                                                     |
 | reference              | [NC_009942]([https://www.ncbi.nlm.nih.gov/nuccore/NC_001802](https://www.ncbi.nlm.nih.gov/nuccore/158516887)                           |
