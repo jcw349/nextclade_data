@@ -8,7 +8,7 @@
 | workflow               | [jcw349/nextstrain/wnv-ns-global/](https://www.github.com/jcw349/nextstrain/wnv-ns-global/)                                            |
 | nextclade dataset path | community/staph-b/wnv/lineages-all                                                                                                     |
 | reference              | [NC_009942](https://www.ncbi.nlm.nih.gov/nuccore/158516887)                                                                            |
-| root                   | [AY765264]([https://www.ncbi.nlm.nih.gov/nuccore/158516887](https://www.ncbi.nlm.nih.gov/nuccore/AY765264))                            |
+| root                   | [AY765264](https://www.ncbi.nlm.nih.gov/nuccore/AY765264)                                                                              |
 
 ## Background
 The goal at Public Health Laboratories are to be able to rapidly determine West Nile virus (WNV) lineages and also be able to standardize nomenclature to track the evolution and characteristics of WNV. 
