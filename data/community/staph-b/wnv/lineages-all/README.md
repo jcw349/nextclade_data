@@ -50,3 +50,6 @@ Followed [grubaughlab/WNV-nextstrain](https://github.com/grubaughlab/WNV-nextstr
 
 #### Lineage designation:
 Used Autolin for lineage designation. Specifying the initial designations as the lineage/clade and strains that were previously designated in published literature.
+
+## References
+- ...
