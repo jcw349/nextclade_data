@@ -21,24 +21,32 @@ This data is intended to include as many lineages and diversity as are published
 Sequence and metadata are collected from contributing public health laboratories, WNV4K Project, and NCBI Genbank.
 
 #### Inclusion criteria:
--Sequences that are initially published as the representative lineages
+- Sequences that are initially published as the representative lineages
 - ...?
-- 
+
 #### Exclusion criteria:
--Sequences that are <=90% of reference sequence length are excluded
--...?
+- Sequences that are <=90% of reference sequence length are excluded
+- ...?
 
 #### Metadata:
--strain: name representing the sequences reference sequences on the Nextclade
--date: collection date
--country: country from which the samples are collected
--state: state, provincial, or regional names
--division: location names representing the sites from which the samples are collected
--host: scientific name of the host
--host-categories: colloquial names of host
--clade_membership: lineage/clade names that were historically published
--strain_membership: strains that represent subgroups within the lineage/clades
--organization: organization that published the data
--DataSource: sources from which the data was gathered
--latitude: decimal latitude values of the collection sites represented by the value in division
--longitude: decimal longitude values of the collection sites represented by the value in division
+| Column Names  | Description    |
+|---------------|----------------|
+| strain  | name representing the sequences reference sequences on the Nextclade    |
+| date  | collection date    |
+| country  | country from which the samples are collected    |
+| state  | state, provincial, or regional names    |
+| division  | location names representing the sites from which the samples are collected    |
+| host  | scientific name of the host    |
+| host-categories  | colloquial names of host    |
+| clade_membership  | lineage/clade names that were published    |
+| strain_membership  | strains that represent subgroups within the lineage/clades    |
+| organization  | organization that published the data    |
+| DataSource  | sources from which the data was gathered    |
+| latitude  | decimal latitude values of the collection sites represented by the value in division    |
+| longitude  | decimal longitude values of the collection sites represented by the value in division    |
+
+#### Nextstrain Build:
+Followed [grubaughlab/WNV-nextstrain](https://github.com/grubaughlab/WNV-nextstrain) pipeline with some minor modifications to process the data collected from the above sources.
+
+#### Lineage designation:
+Used Autolin for lineage designation. Specifying the initial designations as the lineage/clade and strains that were previously designated in published literature.
