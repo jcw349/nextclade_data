@@ -14,10 +14,10 @@
     "reference accession": "NC_009942.1"
   },
   "qc": {
-    "schemaVersion": "1.2.0",
-    "frameshifs": {
-      "enabled": true
-    },
+      "frameShifts": {
+        "enabled": true,
+        "scoreWeight": 20
+      },
     "missingData": {
       "enabled": true,
       "missingDataThreshold": 2000,
