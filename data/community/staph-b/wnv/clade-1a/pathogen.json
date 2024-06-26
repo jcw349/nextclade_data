@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "3.0.0",
+  "files": {
+    "reference": "reference.fasta",
+    "pathogenJson": "pathogen.json",
+    "genomeAnnotation": "genome_annotation.gff3",
+    "examples": "sequences.fasta",
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "attributes": {
+    "name": "West Nile virus",
+    "reference name": "West Nile virus lineage 1, complete genome",
+    "reference accession": "NC_009942.1"
+  },
+  "qc": {
+    "frameShifts": {
+      "enabled": true,
+      "scoreWeight": 20
+    },
+    "missingData": {
+      "enabled": true,
+      "missingDataThreshold": 2000,
+      "scoreBias": 1000,
+      "scoreWeight": 50
+    },
+    "mixedSites": {
+      "enabled": true,
+      "mixedSitesThreshold": 40,
+      "scoreWeight": 40
+    },
+    "privateMutations": {
+      "cutoff": 200,
+      "enabled": true,
+      "typical": 50,
+      "weightLabeledSubstitutions": 1,
+      "weightReversionSubstitutions": 2,
+      "weightUnlabeledSubstitutions": 1
+    },
+    "snpClusters": {
+      "enabled": true,
+      "windowSize": 100,
+      "clusterCutOff": 5,
+      "scoreWeight": 20
+    },
+    "stopCodons": {
+      "enabled": true,
+      "scoreWeight": 40
+    }
+  }
+}
