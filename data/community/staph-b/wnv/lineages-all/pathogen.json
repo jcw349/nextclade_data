@@ -14,38 +14,38 @@
     "reference accession": "NC_009942.1"
   },
   "qc": {
+    "frameShifts": {
+      "enabled": true,
+      "scoreWeight": 20
+    },
     "missingData": {
       "enabled": true,
       "missingDataThreshold": 2000,
-      "scoreBias": 500,
+      "scoreBias": 1000,
       "scoreWeight": 50
     },
-    "privateMutations": {
-      "cutoff": 25,
+    "mixedSites": {
       "enabled": true,
-      "typical": 10,
-      "weightLabeledSubstitutions": 2,
-      "weightReversionSubstitutions": 1,
+      "mixedSitesThreshold": 40,
+      "scoreWeight": 40
+    },
+    "privateMutations": {
+      "cutoff": 200,
+      "enabled": true,
+      "typical": 50,
+      "weightLabeledSubstitutions": 1,
+      "weightReversionSubstitutions": 2,
       "weightUnlabeledSubstitutions": 1
     },
     "snpClusters": {
       "enabled": true,
       "windowSize": 100,
-      "clusterCutOff": 6,
-      "scoreWeight": 50
-    },
-    "mixedSites": {
-      "enabled": true,
-      "mixedSitesThreshold": 15,
-      "scoreWeight": 50
-    },
-    "frameShifts": {
-      "enabled": true,
+      "clusterCutOff": 5,
       "scoreWeight": 20
     },
     "stopCodons": {
       "enabled": true,
-      "scoreWeight": 50
+      "scoreWeight": 40
     }
   }
 }
