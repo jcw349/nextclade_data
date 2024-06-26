@@ -14,10 +14,6 @@
     "reference accession": "NC_009942.1"
   },
   "qc": {
-      "frameShifts": {
-        "enabled": true,
-        "scoreWeight": 20
-      },
     "missingData": {
       "enabled": true,
       "missingDataThreshold": 2000,
