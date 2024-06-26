@@ -5,7 +5,7 @@
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------|
 | authors                | Jade Wang (NYC DOHMH), Byeong Jeong (NJ DOH), Luc Gagne (MA DPH), Matthew Doucette (MA DPH), Sean SierraPatev (RI DOH)                 |
 | data sources           | US Public Health Laboratories, WNV4k Project, NCBI Genbank                                                                             |
-| workflow               | [jcw349/WNV-ns-global]/(https://github.com/jcw349/WNV-ns-global)                                                                                                |
+| workflow               | [github/jcw349/WNV-ns-global](https://github.com/jcw349/WNV-ns-global)                                                                                                |
 | nextclade dataset path | community/staph-b/wnv/lineages-all                                                                                                     |
 | reference              | [NC_009942](https://www.ncbi.nlm.nih.gov/nuccore/158516887)                                                                            |
 | root                   | [AY765264](https://www.ncbi.nlm.nih.gov/nuccore/AY765264)                                                                              |
