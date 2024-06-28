@@ -30,17 +30,19 @@ Only nodes with known clade, strain, and lineage designations published in liter
 > conda activate nextclade
 
 3. Run nextclade. Output files will be in `output` folder
-> nextclade run -d wnv-all-clades-raw -O
+> nextclade run \\
+>    -d wnv-all-clades-raw \\
+>    -O
 
 ***If this build is unavailable in Nextclade CLI, run the following command:***
 3. Download `all-clades` folder
 4. Run nextclade. Output files will be in `output` folder
-> nextclade run \
->   -r ./all-clades/reference.fasta \
->   -a ./all-clades/tree_raw.json \
->   -p ./all-clades/pathogen.json \
->   -m ./all-clades/genome_annotation.gff3 
->   -O
+> nextclade run \\
+>    -r ./all-clades/reference.fasta \\
+>    -a ./all-clades/tree_raw.json \\
+>    -p ./all-clades/pathogen.json \\
+>    -m ./all-clades/genome_annotation.gff3 \\
+>    -O
 
 #### Inferred tree:
 The clade, strain, and lineage designations are inferred for all nodes. Placing sequences onto the tree using this version will ensure a clade, strain, and lineage designation will be provided based on phylogenetic placements. [augur traits](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/traits.html) was used to infer missing clade, strain, and lineage designations.
