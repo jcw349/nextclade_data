@@ -16,18 +16,74 @@ This Nextclade data use West Nile virus lineage 1 for genome annotations.
 
 This data is intended to include as many lineages and diversity as are published until the phylogenetic tree grows beyond manageable size. 
 
-## Method
+## Recommended Nextclade Commands
+### All Clades:
+#### Raw tree:
+Only nodes with known clade, strain, and lineage designations published in literature are labeled. Placing sequences onto the tree using this version will ensure that the clade, strain, and lineage inheritance are based on publish data only. Some branches may not have clade, strain, or lineage designations.
+
+**Process your data:**
+1. Gather consensus sequence(s) for which you would like to process through Nextclade:
+2. Use `all-clades-raw` build
+
+***If using Nextclade CLI, run the following command:***
+2. Activate conda in the folder where you have the query sequences
+> conda activate nextclade
+
+3. Run nextclade. Output files will be in `output` folder
+> nextclade run -d wnv-all-clades-raw -O
+
+***If this build is unavailable in Nextclade CLI, run the following command:***
+3. Download `all-clades` folder
+4. Run nextclade. Output files will be in `output` folder
+> nextclade run \
+>   -r ./all-clades/reference.fasta \
+>   -a ./all-clades/tree_raw.json \
+>   -p ./all-clades/pathogen.json \
+>   -m ./all-clades/genome_annotation.gff3 
+>   -O
+
+#### Inferred tree:
+The clade, strain, and lineage designations are inferred for all nodes. Placing sequences onto the tree using this version will ensure a clade, strain, and lineage designation will be provided based on phylogenetic placements. [augur traits](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/traits.html) was used to infer missing clade, strain, and lineage designations.
+
+**Process your data:**
+1. Gather consensus sequence(s) for which you would like to process through Nextclade:
+2. Use `all-clades` build
+
+***If using Nextclade CLI, run the following command:***
+2. Activate conda in the folder where you have the query sequences
+> conda activate nextclade
+
+3. Run nextclade. Output files will be in `output` folder
+> nextclade run -d wnv-all-clades -O
+
+***If this build is unavailable in Nextclade CLI, run the following command:***
+3. Download `all-clades` folder
+4. Run nextclade. Output files will be in `output` folder
+> nextclade run \
+>   -r ./all-clades/reference.fasta \
+>   -a ./all-clades/tree.json \
+>   -p ./all-clades/pathogen.json \
+>   -m ./all-clades/genome_annotation.gff3 
+>   -O
+
+#### Lineage designations:
+*under construction*
+
+### Lineage 1a:
+*under construction*
+
+## Methods
 
 ### Data
 Sequence and metadata are collected from contributing public health laboratories, WNV4K Project, and NCBI Genbank.
 
 #### Inclusion criteria:
 - Sequences that are initially published as the representative lineages
-- ...?
+- *under construction...*
 
 #### Exclusion criteria:
 - Sequences that are <=90% of reference sequence length are excluded
-- ...?
+- *under construction...*
 
 #### Metadata:
 | Column Names  | Description    |
@@ -47,8 +103,11 @@ Sequence and metadata are collected from contributing public health laboratories
 | longitude  | decimal longitude values of the collection sites represented by the value in division    |
 
 #### Nextstrain Build:
-Followed [grubaughlab/WNV-nextstrain](https://github.com/grubaughlab/WNV-nextstrain) pipeline with some minor modifications to process the data collected from the above sources. 
-Modified workflow for this nextclade build can be found here: [github.com/jcw349/WNV-ns-global](https://github.com/jcw349/WNV-ns-global) 
+WNV-ns-global was built with data gathered from sources described above and were processed using the [grubaughlab/WNV-nextstrain](https://github.com/grubaughlab/WNV-nextstrain) pipeline with some minor modifications to the scripts. 
+##### All Clades
+Modified workflow for this nextclade build can be found here: [github.com/jcw349/WNV-ns-global](https://github.com/jcw349/WNV-ns-global).
+##### Lineage Ia Tree
+The Lineage Ia tree is a subset of the larger tree that included all clades to offer easier navigation and visualization. The subset tree is extracted using [matUtils](https://usher-wiki.readthedocs.io/en/latest/matUtils.html#extract)
 
 #### Initial clade and strain designations:
 Initial clade and strain memberships are designated in publications. References from which we retrieved the clade and strain names are listed below.
