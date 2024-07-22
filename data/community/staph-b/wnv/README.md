@@ -38,10 +38,10 @@ Only nodes with known clade, strain, and lineage designations published in liter
 3. Download `all-clades` folder
 4. Run nextclade. Output files will be in `output` folder
 > nextclade run \\
->    -r ./all-clades/reference.fasta \\
->    -a ./all-clades/tree_raw.json \\
->    -p ./all-clades/pathogen.json \\
->    -m ./all-clades/genome_annotation.gff3 \\
+>    -r ./all-Ia/reference.fasta \\
+>    -a ./all-Ia/tree_raw.json \\
+>    -p ./all-Ia/pathogen.json \\
+>    -m ./all-Ia/genome_annotation.gff3 \\
 >    -O
 
 #### Inferred tree:
@@ -62,11 +62,12 @@ The clade, strain, and lineage designations are inferred for all nodes. Placing 
 3. Download `all-clades` folder
 4. Run nextclade. Output files will be in `output` folder
 > nextclade run \
+>   ./sequences.fasta \
 >   -r ./data/community/staph-b/wnv/all-clades/reference.fasta \
 >   -a ./data/community/staph-b/wnv/all-clades/tree.json \
 >   -p ./data/community/staph-b/wnv/all-clades/pathogen.json \
->   -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 
->   -O
+>   -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 \
+>   -O ./output_wnv-all/
 
 #### Lineage designations:
 *under construction*
