@@ -62,10 +62,10 @@ The clade, strain, and lineage designations are inferred for all nodes. Placing 
 3. Download `all-clades` folder
 4. Run nextclade. Output files will be in `output` folder
 > nextclade run \
->   -r ./all-clades/reference.fasta \
->   -a ./all-clades/tree.json \
->   -p ./all-clades/pathogen.json \
->   -m ./all-clades/genome_annotation.gff3 
+>   -r ./data/community/staph-b/wnv/all-clades/reference.fasta \
+>   -a ./data/community/staph-b/wnv/all-clades/tree.json \
+>   -p ./data/community/staph-b/wnv/all-clades/pathogen.json \
+>   -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 
 >   -O
 
 #### Lineage designations:
