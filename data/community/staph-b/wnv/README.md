@@ -68,7 +68,8 @@ The clade, strain, and lineage designations are inferred for all nodes. Placing 
 >   -a ./data/community/staph-b/wnv/all-clades/tree.json \
 >   -p ./data/community/staph-b/wnv/all-clades/pathogen.json \
 >   -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 \
->   -O ./output_wnv-all/
+>   -O ./output_wnv-all/ \
+>   --include-nearest-node-info true
 
 #### Lineage designations:
 *under construction*
