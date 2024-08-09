@@ -43,7 +43,8 @@ Only nodes with known clade, strain, and lineage designations published in liter
 >    -a ./data/community/staph-b/wnv/all-clades/tree_raw.json \
 >    -p ./data/community/staph-b/wnv/all-clades/pathogen.json \
 >    -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 \
->    -O ./output_wnv-all/
+>    -O ./output_wnv-all/ \
+>    --include-nearest-node-info true
 
 #### Inferred tree:
 The clade, strain, and lineage designations are inferred for all nodes. Placing sequences onto the tree using this version will ensure a clade, strain, and lineage designation will be provided based on phylogenetic placements. [augur traits](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/traits.html) was used to infer missing clade, strain, and lineage designations.
