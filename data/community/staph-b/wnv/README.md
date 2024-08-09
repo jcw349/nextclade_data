@@ -19,11 +19,10 @@ This data is intended to include as many lineages and diversity as are published
 ## Recommended Nextclade Commands
 ### All Clades:
 #### Raw tree:
-Only nodes with known clade, strain, and lineage designations published in literature are labeled. Placing sequences onto the tree using this version will ensure that the clade, strain, and lineage inheritance are based on publish data only. Some branches may not have clade, strain, or lineage designations.
 
 **Process your data:**
 1. Gather consensus sequence(s) for which you would like to process through Nextclade:
-2. Use `all-clades-raw` build
+2. Use `all-clades` build
 
 ***If using Nextclade CLI, run the following command:***
 2. Activate conda in the folder where you have the query sequences
@@ -31,7 +30,7 @@ Only nodes with known clade, strain, and lineage designations published in liter
 
 3. Run nextclade. Output files will be in `output` folder
 > nextclade run \
->    -d wnv-all-clades-raw \
+>    -d wnv-all-clades \
 >    -O
 
 ***If this build is unavailable in Nextclade CLI, run the following command:***
@@ -45,32 +44,6 @@ Only nodes with known clade, strain, and lineage designations published in liter
 >    -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 \
 >    -O ./output_wnv-all/ \
 >    --include-nearest-node-info true
-
-#### Inferred tree:
-The clade, strain, and lineage designations are inferred for all nodes. Placing sequences onto the tree using this version will ensure a clade, strain, and lineage designation will be provided based on phylogenetic placements. [augur traits](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/traits.html) was used to infer missing clade, strain, and lineage designations.
-
-**Process your data:**
-1. Gather consensus sequence(s) for which you would like to process through Nextclade:
-2. Use `all-clades` build
-
-***If using Nextclade CLI, run the following command:***
-2. Activate conda in the folder where you have the query sequences
-> conda activate nextclade
-
-3. Run nextclade. Output files will be in `output` folder
-> nextclade run -d wnv-all-clades -O
-
-***If this build is unavailable in Nextclade CLI, run the following command:***
-3. Download `all-clades` folder
-4. Run nextclade. Output files will be in `output` folder
-> nextclade run \
->   ./sequences.fasta \
->   -r ./data/community/staph-b/wnv/all-clades/reference.fasta \
->   -a ./data/community/staph-b/wnv/all-clades/tree.json \
->   -p ./data/community/staph-b/wnv/all-clades/pathogen.json \
->   -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 \
->   -O ./output_wnv-all/ \
->   --include-nearest-node-info true
 
 #### Lineage designations:
 *under construction*
@@ -103,6 +76,10 @@ Sequence and metadata are collected from contributing public health laboratories
 | host-categories  | colloquial names of host    |
 | clade_membership  | lineage/clade names that were published    |
 | strain  | strains that represent subgroups within the lineage/clades    |
+| lineages  | lineages that represent lineage/clades/strains of the sequences as inferred by Nextstrain    |
+| parsimony-scores  | parsimony scores of the sequence placements on the tree    |
+| usher-lineages  | lineage designations as inferred by UShER    |
+| autolin-lineages  | lineage designations as inferred by Autolin and new lineage names are created by autolin    |
 | organization  | organization that published the data    |
 | DataSource  | sources from which the data was gathered    |
 | latitude  | decimal latitude values of the collection sites represented by the value in division    |
