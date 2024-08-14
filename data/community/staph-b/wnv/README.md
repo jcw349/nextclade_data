@@ -39,7 +39,7 @@ This data is intended to include as many lineages and diversity as are published
 > nextclade run \
 >    sequences.fasta \
 >    -r ./data/community/staph-b/wnv/all-clades/reference.fasta \
->    -a ./data/community/staph-b/wnv/all-clades/tree_raw.json \
+>    -a ./data/community/staph-b/wnv/all-clades/tree.json \
 >    -p ./data/community/staph-b/wnv/all-clades/pathogen.json \
 >    -m ./data/community/staph-b/wnv/all-clades/genome_annotation.gff3 \
 >    -O ./output_wnv-all/ \
